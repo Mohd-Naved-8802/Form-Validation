@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    height:100vh;
+    background: url("../images/Building-wp.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-position: relative;
+    z-index: 1;
+}
+body:before{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+#form-container{
+    width:450px;
+    padding: 4rem 5rem 5rem 5rem;
+    background-color:rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+}
+
+h2{
+    font-size: 2.6rem;
+    font-weight: 800;
+    text-align: center;
+    color: #fff;
+}
+label{
+    color:#fff;
+    margin-top: 15px;
+    display: block;
+    font-size: 1.7rem;
+    margin-bottom: 2px;
+}
+input{
+    width:100%;
+    padding-block: 12px;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border:unset;
+    border-bottom: 1px solid #fff;
+    color:grey;
+    padding-left: 2px;
+}
+input:focus{
+    outline: unset;
+    background-color: #fff;
+    color:#000;
+}
+
+input::placeholder{
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+input[type="submit"]{
+    color:#fff;
+    background-color: #b71540;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+input[type="submit"]:hover{
+    color:#b71540;
+    background-color: #fff;
+    border:2px solid #b71540;
+}
+.error{
+    color:red;
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+#submitForm{
+    color:#fff;
+    font-size: 4rem;
+}
